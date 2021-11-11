@@ -10,6 +10,16 @@ html, body {
 	--background-color: #060404;
 }
 
+.screenshots{
+	width: 100%;
+}
+.screenshots img {
+	margin: 20px;
+	margin-left: 00px;
+    width: 600px;
+    height: auto;
+}
+
 .promo{
 	/* background-color: #5c3494; */
 	/* position: absolute; */
@@ -38,7 +48,7 @@ html, body {
 	align-self: center;
 	padding:0.35em 1.2em;
 	border:0.1em solid #FFFFFF;
-	margin:0.3em 0.3em 0.3em 0.3em;
+	margin:0.3em 0.3em 0.7em 1em;
 	border-radius:0.12em;
 	box-sizing: border-box;
 	text-decoration:none;
@@ -54,17 +64,21 @@ html, body {
 	background-color:#FFFFFF;
 }
 
+#footnote{
+	color: grey;
+}
+
 .parallax {
 	perspective: 100px;
 	height: 1000px;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: auto; 
 	position: absolute;
-	top: 35px;
+	top: 0px;
 	left: 50%;
 	right: 0;
 	bottom: 0;
-	margin-left: -606px; 
+	margin-left: -608px; 
 }
 .parallax__layer {
 	position: absolute;
@@ -78,16 +92,38 @@ html, body {
 	position: absolute;
 	bottom: 0;
 }
-.parallax__cover {
+.parallax__cover__2 {
 	background: var(--background-color);
 	display: block;
 	position: absolute;
-	top: 840px;
+	transform: translateZ(-200px) scale(3) translateY(885px);
+	top: 830px;
 	left: 0;
 	right: 0;
 	height: 2000px;
 	z-index: 2;
 	-webkit-mask: none;
+}
+.parallax__cover {
+	background: #060404dd;
+	display: block;
+	position: absolute;
+	top: 830px;
+	left: 0;
+	right: 0;
+	width: 1226px;
+	height: 2000px;
+	z-index: 2;
+	-webkit-mask: none;
+}
+.parallax__cover p {
+	position: relative;
+	color: white;
+	font-size: large;
+	font-family:'Roboto',sans-serif;
+	font-weight:400;
+	margin: 10px;
+	margin-left: 15px; 
 }
 .parallax__layer__0 {
 	transform: translateZ(-300px) scale(4);
